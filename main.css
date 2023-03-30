@@ -1,0 +1,11 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title-font {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.carousel-item {
+  height: 500px;
+}
