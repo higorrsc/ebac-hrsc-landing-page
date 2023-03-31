@@ -4,10 +4,28 @@ body {
 
 .title-font {
   font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
 }
 
 .carousel-item {
   height: 500px;
+}
+
+.navbar,
+footer {
+  background-color: #152e66;
+}
+
+.white-text {
+  color: white;
+}
+
+.zebra-color-1 {
+  background-color: #b2c3e9;
+}
+
+.zebra-color-2 {
+  background-color: #6d84b6;
 }
 
 @media (max-width: 767px) {

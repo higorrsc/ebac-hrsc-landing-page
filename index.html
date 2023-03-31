@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-5" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 title-font fw-bold fs-4">Hotel EBAC</h1>
+            <h1 class="navbar-brand m-0 title-font fw-bold fs-4 white-text">Hotel EBAC</h1>
         </div>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
             <span class="navbar-toggler-icon"></span>
@@ -46,37 +46,284 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="overflow-x-hidden">
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./images/carousel/slide-1.jpg" alt="">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./images/carousel/slide-2.jpg" alt="Recepção">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./images/carousel/slide-3.jpg" alt="">
-                    </div>
+    <section id="carousel-bs">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/carousel/slide-1.jpg" alt="">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/carousel/slide-2.jpg" alt="Recepção">
                 </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/carousel/slide-3.jpg" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
             </div>
         </div>
     </section>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-hotel" class="zebra-color-1">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/estrutura/hotel.jpg" alt="Foto do espaço do quarto do hotel"
+                                class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="title-font">Sobre o Hotel</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi qui quo voluptatibus,
+                                numquam ea nobis saepe neque, tenetur cupiditate natus provident a cumque earum
+                                consectetur architecto laboriosam eum dignissimos, alias nemo? Deleniti sequi qui
+                                maiores expedita. Repellendus reiciendis magnam ab ipsum id perspiciatis dolor numquam
+                                exercitationem consectetur deserunt quaerat, veritatis officia dicta quos pariatur earum
+                                iure accusamus accusantium corrupti iusto rerum! Quod iure debitis autem animi maxime,
+                                tempora voluptas quos amet voluptatem ipsam eveniet cupiditate id nesciunt adipisci
+                                vitae atque laboriosam laborum doloribus illo natus! Nihil magni adipisci repudiandae
+                                ipsa corrupti, neque laudantium in numquam culpa eligendi assumenda sit aliquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="estrutura-hotel" class="zebra-color-2">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-font text-center white-text">Nossa Estrutura</h2>
+                </div>
 
-    <footer id="rodape">
-
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-estrutura">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acomodacoes"
+                                class="fw-bold text-start nav-link text-colored active">Acomodações</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lazer"
+                                class="fw-bold text-start nav-link text-colored">Lazer</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#areas-comuns"
+                                class="fw-bold text-start nav-link text-colored">Áreas comuns</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="acomodacoes">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-simples.jpg" class="d-block w-100"
+                                            alt="Suíte Simples">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suite simples</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 32"</li>
+                                            <li>Frigobar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-luxo-I.jpg" class="d-block w-100"
+                                            alt="Suíte Luxo I">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suíte Luxo I</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 42"</li>
+                                            <li>Frigobar</li>
+                                            <li>Sofá</li>
+                                            <li>Mesa auxiliar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-luxo-II.jpg" class="d-block w-100"
+                                            alt="Coca">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suíte Luxo II</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 42"</li>
+                                            <li>Frigobar</li>
+                                            <li>Sofá</li>
+                                            <li>Mesa auxiliar</li>
+                                            <li>Varanda</li>
+                                            <li>Cama King</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-simples.jpg" class="d-block w-100"
+                                            alt="Suíte Simples">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suite simples</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 32"</li>
+                                            <li>Frigobar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-luxo-I.jpg" class="d-block w-100"
+                                            alt="Suíte Luxo I">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suíte Luxo I</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 42"</li>
+                                            <li>Frigobar</li>
+                                            <li>Sofá</li>
+                                            <li>Mesa auxiliar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/acomodacoes/suite-luxo-II.jpg" class="d-block w-100"
+                                            alt="Coca">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Suíte Luxo II</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                        <ul>
+                                            <li>Ar</li>
+                                            <li>TV 42"</li>
+                                            <li>Frigobar</li>
+                                            <li>Sofá</li>
+                                            <li>Mesa auxiliar</li>
+                                            <li>Varanda</li>
+                                            <li>Cama King</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="lazer">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/bar-1.jpg" class="d-block w-100" alt="Bar">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Bar</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/casino.jpg" class="d-block w-100" alt="Casino">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Casino</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/piscina.jpg" class="d-block w-100" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Piscina</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/spa.jpg" class="d-block w-100" alt="Vinho">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">SPA</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/bar-1.jpg" class="d-block w-100" alt="Bar">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Bar</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/lazer/casino.jpg" class="d-block w-100" alt="Casino">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Casino</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="areas-comuns">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/estrutura/cafe-manha.jpg" class="d-block w-100"
+                                            alt="Café da manhã">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Café da manhã</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/estrutura/restaurante-1.jpg" class="d-block w-100"
+                                            alt="Restaurante A">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Restaurante A</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/estrutura/restaurante-2.jpg" class="d-block w-100"
+                                            alt="Restaurante B">
+                                        <h5 class="text-colored fw-bold mt-2 white-text">Restaurante B</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, unde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="zebra-color-1">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-font text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" name="" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" name="" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone</label>
+                                <input type="tel" name="" id="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="data-checkin" class="form-label fw-bold">Previsão de Check-in</label>
+                                <input type="text" name="" id="data-checkin" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="data-checkout" class="form-label fw-bold">Previsão de Check-out</label>
+                                <input type="text" name="" id="data-checkout" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea name="" id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="title-font fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="fs-5"><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="title-font fs-4">
+                                <i class="bi bi-cursor-fill"></i>Endereço
+                            </h3>
+                            <p>Av. Bootstrap nº 3, Bairro JQuery - Vitória - ES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="rodape" class="text-center pt-3 pb-3 title-font white-text">
+        &copy; Hotel EBAC - Todos os direitos reservados
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
